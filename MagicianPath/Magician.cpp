@@ -16,19 +16,22 @@ void Magician::Draw()
 
 void Magician::Update(float deltaTime)
 {
-	m_Animation->SetProps("player_idle", 0, 5, 120);
+	
+	m_Animation->SetProps("player_idle", 0, 5, 120, m_Flip);
 	m_RigidBody->UnsetForce();
 
 	if (Input::GetInstance()->GetKeyDown(SDL_SCANCODE_A))
 	{
 		m_RigidBody->ApplyForceX(10 * BACKWARD);
 		m_Animation->SetProps("player_run", 0, 5, 120, SDL_FLIP_HORIZONTAL);
+		m_Flip = SDL_FLIP_HORIZONTAL;
 	}
 
 	if (Input::GetInstance()->GetKeyDown(SDL_SCANCODE_D))
 	{
 		m_RigidBody->ApplyForceX(10 * FORWARD);
 		m_Animation->SetProps("player_run", 0, 5, 120);
+		m_Flip = SDL_FLIP_NONE;
 	}
 
 	m_RigidBody->Update(deltaTime);	

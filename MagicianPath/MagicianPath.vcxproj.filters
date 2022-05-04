@@ -105,4 +105,12 @@
       <Filter>Файлы заголовков\Characters</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\idle.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="assets\run.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

@@ -39,6 +39,10 @@
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Vector2D.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\idle.png" />
+    <Image Include="assets\run.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
