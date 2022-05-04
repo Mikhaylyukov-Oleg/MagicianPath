@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Core">
+      <UniqueIdentifier>{a462c743-48ad-480c-be78-d1f8ad7bbef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Core">
+      <UniqueIdentifier>{d1c7a247-25ca-4053-aed7-f86fe983177e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Graphics">
+      <UniqueIdentifier>{1c129284-d694-4771-b91d-cdad940bcc5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Characters">
+      <UniqueIdentifier>{0904d967-541d-4669-97ee-985c15d09dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Inputs">
+      <UniqueIdentifier>{2ddcec7f-12ad-454f-acb1-4780b9fca40e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Animation">
+      <UniqueIdentifier>{e1f83f05-674b-47b1-bb09-7738eac2ea6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Graphics">
+      <UniqueIdentifier>{92f34132-872c-4554-a4c5-b3e061950e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Characters">
+      <UniqueIdentifier>{a7279209-5913-49b7-87ba-ef07f4f666e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Inputs">
+      <UniqueIdentifier>{2f1ad4d2-f81d-4638-8f27-3f8ab81e26cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Animation">
+      <UniqueIdentifier>{0cc1dc9f-d69e-4217-ba35-e6859723e8b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Object">
+      <UniqueIdentifier>{e3f62a36-4922-4c11-99ed-e5b792731f2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Physics">
+      <UniqueIdentifier>{17b5132a-2e1b-4a69-8f0a-998348f0977e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Исходные файлы\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Magician.cpp">
+      <Filter>Исходные файлы\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Исходные файлы\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Исходные файлы\Inputs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h">
+      <Filter>Файлы заголовков\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Файлы заголовков\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Файлы заголовков\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Файлы заголовков\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Файлы заголовков\Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Файлы заголовков\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="IObject.h">
+      <Filter>Файлы заголовков\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBody.h">
+      <Filter>Файлы заголовков\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Файлы заголовков\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Файлы заголовков\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Magician.h">
+      <Filter>Файлы заголовков\Characters</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
