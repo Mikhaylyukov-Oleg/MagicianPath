@@ -49,6 +49,12 @@
     <Filter Include="Файлы заголовков\Physics">
       <UniqueIdentifier>{17b5132a-2e1b-4a69-8f0a-998348f0977e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\Timer">
+      <UniqueIdentifier>{015c618d-0cfd-412d-9563-b2bae51bb040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Timer">
+      <UniqueIdentifier>{4f6c71ca-f6ad-4f75-a6fa-cbee61f90a6f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -68,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="Input.cpp">
       <Filter>Исходные файлы\Inputs</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Исходные файлы\Timer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="Magician.h">
       <Filter>Файлы заголовков\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Файлы заголовков\Timer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,5 @@
 #include "Engine.h"
-
+#include "Timer.h"
 
 int main(int argc, char* argv[])
 {	
@@ -10,6 +10,7 @@ int main(int argc, char* argv[])
 		enginePtr->Events();
 		enginePtr->Update();
 		enginePtr->Render();
+		Timer::GetInstance()->Tick();
 	}
 	enginePtr->Clean();
 	return 0;

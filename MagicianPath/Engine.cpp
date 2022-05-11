@@ -4,6 +4,7 @@
 #include "Transform.h"
 #include "Magician.h"
 #include "Input.h"
+#include "Timer.h"
 
 Engine* Engine::s_Instance = nullptr;
 Magician* player = nullptr;
@@ -51,7 +52,8 @@ void Engine::Quit()
 
 void Engine::Update()
 {
-	player->Update(0.6);
+	float dt = Timer::GetInstance()->GetDeltaTime();
+	player->Update(dt);
 }
 
 void Engine::Render()
