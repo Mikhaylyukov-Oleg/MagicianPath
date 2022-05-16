@@ -16,9 +16,6 @@ private:
 	static Timer* s_Instance;
 	float m_DeltaTime;
 	float m_LastTime;
-
-
-
 };
 
 #endif TIMER_H

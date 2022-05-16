@@ -24,8 +24,6 @@ void Input::Listen()
             break;
         }
     }
-
-
 }
 
 bool Input::GetKeyDown(SDL_Scancode key)

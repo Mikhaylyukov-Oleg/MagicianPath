@@ -55,13 +55,22 @@
     <Filter Include="Исходные файлы\Timer">
       <UniqueIdentifier>{4f6c71ca-f6ad-4f75-a6fa-cbee61f90a6f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\Map">
+      <UniqueIdentifier>{30e2721e-1558-417c-9685-8f5277a6897a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Map">
+      <UniqueIdentifier>{17490335-6a1c-41a9-a352-2fad900568e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\TinyXML">
+      <UniqueIdentifier>{7e0b5d46-4284-47b8-bbca-82187f4d49bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\TinyXML">
+      <UniqueIdentifier>{f7a4b9d8-835f-48d5-9371-2a05abbd12e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Animation.cpp">
-      <Filter>Исходные файлы\Animation</Filter>
     </ClCompile>
     <ClCompile Include="Magician.cpp">
       <Filter>Исходные файлы\Characters</Filter>
@@ -75,14 +84,32 @@
     <ClCompile Include="Input.cpp">
       <Filter>Исходные файлы\Inputs</Filter>
     </ClCompile>
+    <ClCompile Include="TileLayer.cpp">
+      <Filter>Исходные файлы\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapParser.cpp">
+      <Filter>Исходные файлы\Map</Filter>
+    </ClCompile>
     <ClCompile Include="Timer.cpp">
       <Filter>Исходные файлы\Timer</Filter>
     </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Исходные файлы\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\TinyXML\tinystr.cpp">
+      <Filter>Исходные файлы\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\TinyXML\tinyxml.cpp">
+      <Filter>Исходные файлы\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\TinyXML\tinyxmlerror.cpp">
+      <Filter>Исходные файлы\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\TinyXML\tinyxmlparser.cpp">
+      <Filter>Исходные файлы\TinyXML</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animation.h">
-      <Filter>Файлы заголовков\Animation</Filter>
-    </ClInclude>
     <ClInclude Include="Character.h">
       <Filter>Файлы заголовков\Characters</Filter>
     </ClInclude>
@@ -115,6 +142,27 @@
     </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>Файлы заголовков\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>Файлы заголовков\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMap.h">
+      <Filter>Файлы заголовков\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLayer.h">
+      <Filter>Файлы заголовков\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapParser.h">
+      <Filter>Файлы заголовков\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Файлы заголовков\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\TinyXML\tinystr.h">
+      <Filter>Файлы заголовков\TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\TinyXML\tinyxml.h">
+      <Filter>Файлы заголовков\TinyXML</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -5,6 +5,7 @@
 #include "Magician.h"
 #include "Input.h"
 #include "Timer.h"
+#include "MapParser.h"
 
 Engine* Engine::s_Instance = nullptr;
 Magician* player = nullptr;
@@ -29,9 +30,12 @@ bool Engine::Init()
 		return false;
 	}
 
-	TextureManager::GetInstance()->Load("player_idle", "assets/idle.png");
-	TextureManager::GetInstance()->Load("player_run", "assets/run.png");
-	player = new Magician(new Properties("player_idle", 240, 240, 97, 88));
+	MapParser::GetInstance()->Load();
+	m_LevelMap = MapParser::GetInstance()->GetMap("level1");
+
+	TextureManager::GetInstance()->Load("player_idle", "Assets/idle.png");
+	TextureManager::GetInstance()->Load("player_run", "Assets/run.png");
+	player = new Magician(new Properties("player_idle", 240, 337, 97, 88));
 	
 	return m_IsRunning = true; 
 }
@@ -53,6 +57,7 @@ void Engine::Quit()
 void Engine::Update()
 {
 	float dt = Timer::GetInstance()->GetDeltaTime();
+	m_LevelMap->Update();
 	player->Update(dt);
 }
 
@@ -61,6 +66,7 @@ void Engine::Render()
 	SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
 	SDL_RenderClear(m_Renderer);
 
+	m_LevelMap->Render();
 	player->Draw();
 	SDL_RenderPresent(m_Renderer);
 }
