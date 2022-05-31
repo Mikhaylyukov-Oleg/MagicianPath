@@ -19,14 +19,19 @@ void Camera::Update()
 			m_CameraView.y = 0;
 		}
 
-		if (m_CameraView.x > (2 * SCREEN_WIDTH - m_CameraView.w))
+		TileLayer* tileMap = (TileLayer*)Engine::GetInstance()->GetMap()->GetMapLayers().front();
+		int tileSize = tileMap->GetTileSize();
+		int rowCount = tileMap->GetRowCount();
+		int colCount = tileMap->GetColCount();
+
+		if (m_CameraView.x > (tileSize * colCount - SCREEN_WIDTH))
 		{
-			m_CameraView.x = (2 * SCREEN_WIDTH - m_CameraView.w);
+			m_CameraView.x = tileSize * colCount - SCREEN_WIDTH;
 		}
 
-		if (m_CameraView.y > (2 * SCREEN_HEIGHT - m_CameraView.h))
+		if (m_CameraView.y > (tileSize * rowCount - SCREEN_HEIGHT))
 		{
-			m_CameraView.y = (2 * SCREEN_HEIGHT - m_CameraView.h);
+			m_CameraView.y = (tileSize * rowCount - SCREEN_HEIGHT);
 		}
 
 		m_Position = Vector2D(m_CameraView.x, m_CameraView.y);

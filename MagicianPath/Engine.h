@@ -4,7 +4,7 @@
 #include "SDL.h"
 #include "GameMap.h"
 
-#define SCREEN_WIDTH 800
+#define SCREEN_WIDTH 950
 #define SCREEN_HEIGHT 600
 
 class Engine
@@ -23,15 +23,9 @@ public :
 	void Render();
 	void Events();
 	
-	inline bool IsRunning()
-	{
-		return m_IsRunning;
-	}
-
-	inline SDL_Renderer* GetRenderer()
-	{
-		return m_Renderer;
-	}
+	inline GameMap* GetMap() { return m_LevelMap; }
+	inline bool IsRunning()	{ return m_IsRunning; }
+	inline SDL_Renderer* GetRenderer() { return m_Renderer;	}
 
 private:
 	Engine(){}

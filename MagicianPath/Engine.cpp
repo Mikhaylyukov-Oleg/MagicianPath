@@ -38,7 +38,7 @@ bool Engine::Init()
 	TextureManager::GetInstance()->Load("player_run", "Assets/run.png");
 	TextureManager::GetInstance()->Load("bg", "Assets/Images/bg.png");
 
-	player = new Magician(new Properties("player_idle", 240, 368, 97, 88));
+	player = new Magician(new Properties("player_idle", 240, 290, 97, 88));
 	
 	Camera::GetInstance()->SetTarget(player->GetOrigin());
 

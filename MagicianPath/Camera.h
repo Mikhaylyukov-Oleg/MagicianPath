@@ -5,6 +5,8 @@
 #include "Point.h"
 #include "Vector2D.h"
 #include "Engine.h"
+#include "GameMap.h"
+#include "TileLayer.h"
 
 class Camera
 {

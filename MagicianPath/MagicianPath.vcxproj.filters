@@ -73,6 +73,12 @@
     <Filter Include="Исходные файлы\Camera">
       <UniqueIdentifier>{905dfd67-2c5a-4819-b95e-07acbad4f3a5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Collision">
+      <UniqueIdentifier>{e9fe7b67-8191-4e39-af35-d3d0e79cb340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Collision">
+      <UniqueIdentifier>{6c19d36e-f976-409e-8c24-93dbe8fd4459}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -116,6 +122,9 @@
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Исходные файлы\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionHandler.cpp">
+      <Filter>Исходные файлы\Collision</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +187,9 @@
     </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>Файлы заголовков\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionHandler.h">
+      <Filter>Файлы заголовков\Collision</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
