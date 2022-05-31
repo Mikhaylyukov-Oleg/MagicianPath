@@ -4,8 +4,8 @@
 #include "SDL.h"
 #include "GameMap.h"
 
-#define SCREEN_WIDTH 1300
-#define SCREEN_HAIGTH 600
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
 
 class Engine
 {

@@ -6,6 +6,7 @@
 #include "Input.h"
 #include "Timer.h"
 #include "MapParser.h"
+#include "Camera.h"
 
 Engine* Engine::s_Instance = nullptr;
 Magician* player = nullptr;
@@ -18,7 +19,7 @@ bool Engine::Init()
 		return false;
 	}
 
-	m_Window = SDL_CreateWindow("SavingThePrincess", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HAIGTH, 0);
+	m_Window = SDL_CreateWindow("SavingThePrincess", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
 	if (m_Window == nullptr) {
 		SDL_Log("Failed to create window: %s", SDL_GetError());
 		return false;
@@ -35,8 +36,12 @@ bool Engine::Init()
 
 	TextureManager::GetInstance()->Load("player_idle", "Assets/idle.png");
 	TextureManager::GetInstance()->Load("player_run", "Assets/run.png");
-	player = new Magician(new Properties("player_idle", 240, 337, 97, 88));
+	TextureManager::GetInstance()->Load("bg", "Assets/Images/bg.png");
+
+	player = new Magician(new Properties("player_idle", 240, 368, 97, 88));
 	
+	Camera::GetInstance()->SetTarget(player->GetOrigin());
+
 	return m_IsRunning = true; 
 }
 
@@ -59,6 +64,7 @@ void Engine::Update()
 	float dt = Timer::GetInstance()->GetDeltaTime();
 	m_LevelMap->Update();
 	player->Update(dt);
+	Camera::GetInstance()->Update();
 }
 
 void Engine::Render()
@@ -66,7 +72,9 @@ void Engine::Render()
 	SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
 	SDL_RenderClear(m_Renderer);
 
+	TextureManager::GetInstance()->Draw("bg", 0, 0, 1920, 1080);
 	m_LevelMap->Render();
+
 	player->Draw();
 	SDL_RenderPresent(m_Renderer);
 }

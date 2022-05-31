@@ -67,6 +67,12 @@
     <Filter Include="Исходные файлы\TinyXML">
       <UniqueIdentifier>{f7a4b9d8-835f-48d5-9371-2a05abbd12e3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\Camera">
+      <UniqueIdentifier>{920416da-c998-4257-a718-953f96042676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Camera">
+      <UniqueIdentifier>{905dfd67-2c5a-4819-b95e-07acbad4f3a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -107,6 +113,9 @@
     </ClCompile>
     <ClCompile Include="Vendor\TinyXML\tinyxmlparser.cpp">
       <Filter>Исходные файлы\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Исходные файлы\Camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -164,12 +173,18 @@
     <ClInclude Include="Vendor\TinyXML\tinyxml.h">
       <Filter>Файлы заголовков\TinyXML</Filter>
     </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Файлы заголовков\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Файлы заголовков\Camera</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="assets\idle.png">
+    <Image Include="Assets\idle.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="assets\run.png">
+    <Image Include="Assets\run.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>
