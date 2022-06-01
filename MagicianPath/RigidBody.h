@@ -3,7 +3,6 @@
 
 #include "Vector2D.h"
 
-#define UNIT_MASS 1.0f
 #define GRAVITY 9.8f
 
 #define FORWARD 1
@@ -14,9 +13,9 @@
 
 class RigidBody {
 public:
-	RigidBody() 
+	RigidBody(float mass) 
 	{
-		m_Mass = UNIT_MASS;
+		m_Mass = mass;
 		m_Gravity = GRAVITY;
 	}
 
@@ -40,7 +39,7 @@ public:
 	void Update(float deltaTime)
 	{
 		m_Acceleration.X = (m_Force.X + m_Friction.X) / m_Mass;
-		m_Acceleration.Y = m_Gravity + (m_Force.Y / m_Mass);
+		m_Acceleration.Y = (m_Gravity + m_Force.Y) / m_Mass;
 		m_Velocity = m_Acceleration * deltaTime;
 		m_Position = m_Velocity * deltaTime;
 	}

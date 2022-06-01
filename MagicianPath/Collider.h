@@ -15,7 +15,7 @@ public:
 			x - m_Buffer.x,
 			y - m_Buffer.y,
 			w - m_Buffer.w,
-			h - m_Buffer.h,
+			h - m_Buffer.h
 		};
 	}
 private:

@@ -5,9 +5,6 @@
 #include <vector>
 #include "TileLayer.h"
 #include "GameMap.h"
-#include "Engine.h"
-
-
 
 class CollisionHandler
 {

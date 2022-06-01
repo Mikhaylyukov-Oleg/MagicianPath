@@ -4,12 +4,13 @@
 #include "Character.h"
 #include "Animation.h"
 #include "RigidBody.h"
-#include "Input.h"
-#include "Collider.h"
 #include "Vector2D.h"
+#include "Collider.h"
 
-#define JUMP_TIME 15.0f
-#define JUMP_FORCE 10.0f
+#define JUMP_TIME 12.0f
+#define JUMP_FORCE 25.0f
+#define RUN_FORCE 12.0f
+#define UNIT_MASS 3.0f
 
 class Magician : public Character
 {
@@ -26,12 +27,12 @@ private:
 
 	float m_JumpTime;
 	float m_JumpForce;
+	float m_RunForce;
+	float m_Mass;
 
 	Collider* m_Collider;
-
 	Animation* m_Animation;
 	RigidBody* m_RigidBody;
-
 	Vector2D m_LastSafePosition;
 };
 
