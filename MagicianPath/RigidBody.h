@@ -4,13 +4,13 @@
 #include "Vector2D.h"
 
 #define UNIT_MASS 1.0f
-#define GRAVITY 9.80f
+#define GRAVITY 9.8f
 
 #define FORWARD 1
 #define BACKWARD -1
 
-#define UPWARD 1
-#define DAWNWARD -1
+#define UPWARD -1
+#define DAWNWARD 1
 
 class RigidBody {
 public:

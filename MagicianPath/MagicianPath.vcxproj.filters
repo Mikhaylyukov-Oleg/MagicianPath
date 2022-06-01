@@ -191,6 +191,9 @@
     <ClInclude Include="CollisionHandler.h">
       <Filter>Файлы заголовков\Collision</Filter>
     </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Файлы заголовков\Physics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\idle.png">
