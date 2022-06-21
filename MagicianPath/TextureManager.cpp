@@ -50,10 +50,10 @@ bool TextureManager::ParseTextures(std::string source)
 	return true;
 }
 
-void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip)
+void TextureManager::Draw(std::string id, int x, int y, int width, int height, float scrollRatio, SDL_RendererFlip flip)
 {
 	SDL_Rect srcRect = { 0, 0, width, height };
-	Vector2D cameraPos = Camera::GetInstance()->GetPosition()*0.5;
+	Vector2D cameraPos = Camera::GetInstance()->GetPosition()*scrollRatio;
 	SDL_Rect dstRect = { x - cameraPos.X, y - cameraPos.Y, width, height };
 	SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip );
 }

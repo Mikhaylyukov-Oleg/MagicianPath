@@ -70,7 +70,7 @@ void Engine::Render()
 	SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
 	SDL_RenderClear(m_Renderer);
 
-	TextureManager::GetInstance()->Draw("bg", 0, 0, 1920, 1080);
+	TextureManager::GetInstance()->Draw("bg", 0, 0, 1920, 1080, 0.5);
 	m_LevelMap->Render();
 
 	player->Draw();
