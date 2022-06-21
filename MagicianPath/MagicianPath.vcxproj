@@ -59,10 +59,6 @@
     <ClInclude Include="Vendor\TinyXML\tinystr.h" />
     <ClInclude Include="Vendor\TinyXML\tinyxml.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="Assets\idle.png" />
-    <Image Include="Assets\run.png" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

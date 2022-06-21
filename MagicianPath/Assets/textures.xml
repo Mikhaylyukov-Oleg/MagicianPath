@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<textures>
+	<texture id="player_idle" source="Assets/idle.png">
+	</texture>
+	<texture id="player_run" source="Assets/run.png">
+	</texture>
+	<texture id="player_jump" source="Assets/jump.png">
+	</texture>
+	<texture id="player_fall" source="Assets/fall.png">
+	</texture>
+	<texture id="player_attack" source="Assets/attack.png">
+	</texture>
+
+	<texture id="bg" source="Assets/Images/bg.png">
+	</texture>
+</textures>

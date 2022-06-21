@@ -195,12 +195,4 @@
       <Filter>Файлы заголовков\Physics</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="Assets\idle.png">
-      <Filter>Файлы ресурсов</Filter>
-    </Image>
-    <Image Include="Assets\run.png">
-      <Filter>Файлы ресурсов</Filter>
-    </Image>
-  </ItemGroup>
 </Project>

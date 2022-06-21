@@ -34,13 +34,7 @@ bool Engine::Init()
 	MapParser::GetInstance()->Load();
 	m_LevelMap = MapParser::GetInstance()->GetMap("level1");
 
-	TextureManager::GetInstance()->Load("player_idle", "Assets/idle.png");
-	TextureManager::GetInstance()->Load("player_run", "Assets/run.png");
-	TextureManager::GetInstance()->Load("player_jump", "Assets/jump.png");
-	TextureManager::GetInstance()->Load("player_fall", "Assets/fall.png");
-	TextureManager::GetInstance()->Load("player_attack", "Assets/attack.png");
-	
-	TextureManager::GetInstance()->Load("bg", "Assets/Images/bg.png");
+	TextureManager::GetInstance()->ParseTextures("Assets/textures.xml");
 
 	player = new Magician(new Properties("player_idle", 50, 266, 165, 109));
 	

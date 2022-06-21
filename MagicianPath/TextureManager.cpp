@@ -2,6 +2,7 @@
 #include "SDL_image.h"
 #include "Engine.h"
 #include "Camera.h"
+#include <tinyxml.h>
 
 TextureManager* TextureManager::s_Instance = nullptr;
 
@@ -21,6 +22,30 @@ bool TextureManager::Load(std::string id, std::string filename)
 		return false;
 	}
 	m_TextureMap[id] = texture;
+
+	return true;
+}
+
+bool TextureManager::ParseTextures(std::string source)
+{
+	TiXmlDocument xml;
+	xml.LoadFile(source);
+	if (xml.Error())
+	{
+		std::cout << "Failed to load: " << source << std::endl;
+		return false;
+	}
+
+	TiXmlElement* root = xml.RootElement();
+	for (TiXmlElement* e = root->FirstChildElement(); e != nullptr; e = e->NextSiblingElement())
+	{
+		if (e->Value() == std::string("texture"))
+		{
+			std::string id = e->Attribute("id");
+			std::string src = e->Attribute("source");
+			Load(id, src);
+		}
+	}
 
 	return true;
 }
