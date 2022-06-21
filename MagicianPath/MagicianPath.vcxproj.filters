@@ -46,9 +46,6 @@
     <Filter Include="Файлы заголовков\Object">
       <UniqueIdentifier>{e3f62a36-4922-4c11-99ed-e5b792731f2f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Physics">
-      <UniqueIdentifier>{17b5132a-2e1b-4a69-8f0a-998348f0977e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Файлы заголовков\Timer">
       <UniqueIdentifier>{015c618d-0cfd-412d-9563-b2bae51bb040}</UniqueIdentifier>
     </Filter>
@@ -78,6 +75,9 @@
     </Filter>
     <Filter Include="Файлы заголовков\Collision">
       <UniqueIdentifier>{6c19d36e-f976-409e-8c24-93dbe8fd4459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Physics">
+      <UniqueIdentifier>{17b5132a-2e1b-4a69-8f0a-998348f0977e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

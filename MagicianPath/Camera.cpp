@@ -7,7 +7,7 @@ void Camera::Update()
 	if (m_Target != nullptr)
 	{
 		m_CameraView.x = m_Target->X - SCREEN_WIDTH / 2;
-		m_CameraView.y = m_Target->Y - SCREEN_HEIGHT / 2;
+		m_CameraView.y = m_Target->Y - SCREEN_HEIGHT / 2 + 60;
 
 		if (m_CameraView.x < 0)
 		{

@@ -19,7 +19,7 @@ bool Engine::Init()
 		return false;
 	}
 
-	m_Window = SDL_CreateWindow("SavingThePrincess", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
+	m_Window = SDL_CreateWindow("MagicianPath", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
 	if (m_Window == nullptr) {
 		SDL_Log("Failed to create window: %s", SDL_GetError());
 		return false;
@@ -36,9 +36,13 @@ bool Engine::Init()
 
 	TextureManager::GetInstance()->Load("player_idle", "Assets/idle.png");
 	TextureManager::GetInstance()->Load("player_run", "Assets/run.png");
+	TextureManager::GetInstance()->Load("player_jump", "Assets/jump.png");
+	TextureManager::GetInstance()->Load("player_fall", "Assets/fall.png");
+	TextureManager::GetInstance()->Load("player_attack", "Assets/attack.png");
+	
 	TextureManager::GetInstance()->Load("bg", "Assets/Images/bg.png");
 
-	player = new Magician(new Properties("player_idle", 240, 290, 97, 88));
+	player = new Magician(new Properties("player_idle", 50, 266, 165, 109));
 	
 	Camera::GetInstance()->SetTarget(player->GetOrigin());
 
@@ -82,5 +86,4 @@ void Engine::Render()
 void Engine::Events()
 {
 	Input::GetInstance()->Listen();
-
 }
